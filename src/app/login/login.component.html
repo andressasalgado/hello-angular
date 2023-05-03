@@ -1,0 +1,18 @@
+<div class="login-form">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="senha">Senha:</label>
+      <input type="senha" id="senha" name="senha">
+      <button type="button" (click)="onClick()">Entrar</button>
+    </form>
+  </div>
+  <div class="popup" [class.visible]="isPopupVisible">
+    <div class="popup-content">
+      <h2>Olá!</h2>
+      <p>Nada vai acontecer.</p>
+      <button type="button" (click)="closePopup()">OK</button>
+    </div>
+  </div>
+  
